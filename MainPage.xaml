@@ -1,0 +1,115 @@
+﻿<Page
+    x:Class="PO_Org.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PO_Org"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="WhiteSmoke">
+
+    <Grid>
+        <Rectangle Fill="Red"
+                   Height="50"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Top"></Rectangle>
+        
+        <Image Source="Assets\Logo.png"
+               Width="550"
+               Height="50"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="10, 2, 0 ,0"></Image>
+        
+        <TextBlock Margin="30,60,0,0"
+                   VerticalAlignment="Top"
+                   HorizontalAlignment="Left"
+                   Width="550"
+                   Height="100"
+                   Text="Potrebujete nájsť organizáciu, ktorá sa nachádza v meste Prešov? &#x0a;Je to jednoduché! Stačí len, ak kliknete na tlačidlo 'Nájsť organizáciu' &#x0a;a vyplníte potrebné údaje! &#x0a;&#x0a;Ak nevidíte okno pod týmto textom, dajte si aplikáciu do 'Fullscreen' módu!">
+        </TextBlock>
+        <Button HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="30, 165, 0, 0"
+                Background="Red"
+                Foreground="WhiteSmoke"
+                Click="Show_Orgs">Zobraziť organizácie</Button>
+
+        <Button HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Margin="373, 165, 0, 0"
+                Background="Red"
+                Foreground="WhiteSmoke"
+                Click="Show_Objs">Zobraziť objekty</Button>
+
+        <ListView BorderBrush="Red"
+                  BorderThickness="2"
+                  Margin="30, 200, 0, 0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Width="465"
+                  Height="360"
+                  Background="White"
+                  Name ="SelectList"
+                  SelectionChanged="SelectList_SelectionChanged"></ListView>
+
+        <Rectangle Fill="Red"
+                   Height="50"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Bottom"></Rectangle>
+        
+        <Button VerticalAlignment="Bottom" 
+                Height="35"
+                Width="130"
+                Background="WhiteSmoke" 
+                Margin="27,0,0,7"
+                Click="Find_Org">Nájsť organizáciu</Button>
+
+        <Button VerticalAlignment="Bottom"
+                Height="35"
+                Width="100"
+                Background="WhiteSmoke"
+                Margin="160,0,0,7"
+                Click="Find_Obj">Nájsť objekt</Button>
+        
+        <TextBlock HorizontalAlignment="Left"
+                   VerticalAlignment="Bottom"
+                   Margin="268, 0, 0, 14"
+                   FontSize="18"
+                   IsColorFontEnabled="True"
+                   Text="Názov:" 
+                   FontWeight="Bold"
+                   Foreground="White"></TextBlock>
+        
+        <TextBox HorizontalAlignment="Left"
+                 VerticalAlignment="Bottom"
+                 Margin="330, 0, 0, 8"
+                 Width="150"
+                 Background ="White"
+                 Name="Nazov"></TextBox>
+        
+        <TextBlock HorizontalAlignment="Left"
+                   VerticalAlignment="Bottom"
+                   Margin="490,0, 0, 14"
+                   Text="Ulica:"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Foreground="White"></TextBlock>
+        
+        <TextBox HorizontalAlignment="Left"
+                 VerticalAlignment="Bottom"
+                 Margin="540, 0, 0, 8"
+                 Width="150"
+                 MinWidth="150"
+                 Background = "White"
+                 Name="Street"></TextBox>
+        
+        <TextBlock HorizontalAlignment="Left"
+                   VerticalAlignment="Bottom"
+                   Margin="29,51"
+                   FontSize="14"
+                   FontWeight="Bold"
+                   Foreground="Red"
+                   Text="Údaje vyplňujte gramaticky správne, dajte si pozor aj na veľké písmená!"></TextBlock>
+    </Grid>
+</Page>
