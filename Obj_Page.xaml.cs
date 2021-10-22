@@ -19,7 +19,7 @@ using Windows.UI.Xaml.Navigation;
 namespace PO_Org
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// The Page for displaying information about different Objects that can be found within the city.
     /// </summary>
     public sealed partial class Obj_Page : Page
     {

@@ -18,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 namespace PO_Org
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// A page used to display information about organizations found within the city.
     /// </summary>
     public sealed partial class Org_Page : Page
     {
